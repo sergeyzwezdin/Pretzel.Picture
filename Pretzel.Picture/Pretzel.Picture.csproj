@@ -48,7 +48,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\pretzel\src\Pretzel.Logic\Pretzel.Logic.csproj">
+    <ProjectReference Include="..\..\pretzel\src\Pretzel.Logic\Pretzel.Logic.csproj">
       <Project>{f2e6664d-75ac-4830-8a55-e572027df710}</Project>
       <Name>Pretzel.Logic</Name>
     </ProjectReference>
