@@ -49,7 +49,7 @@ namespace Pretzel.Picture
 
                 result.WriteLine("<img itemprop=\"image\" src=\"{0}\" title=\"{1}\" alt=\"{1}\" {2}/>", Uri.EscapeUriString(Params[0]),
                     HtmlTagRegex.Replace(CiteRegex.Replace(caption, String.Empty), String.Empty)
-                    .Replace("\r", String.Empty).Replace("\n", String.Empty).Replace("\t", String.Empty),
+                    .Replace("\r", String.Empty).Replace("\n", String.Empty).Replace("\t", String.Empty).Replace("\"", String.Empty),
                     classes.Any() ? $"class=\"{String.Join(" ", classes)}\"" : String.Empty);
 
                 result.Write("<figcaption>");
